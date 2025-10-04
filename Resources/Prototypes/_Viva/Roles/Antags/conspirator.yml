@@ -1,0 +1,30 @@
+- type: antag
+  id: Conspirator
+  name: Conspirator
+  antagonist: true
+  setPreference: true
+  objective: ConspiracyObjective
+
+- type: entity
+  abstract: true
+  parent: BaseObjective
+  id: BaseConspiracyObjective
+  components:
+  - type: Objective
+    difficulty: 1
+    issuer: objective-issuer-swf
+  - type: RoleRequirement
+    roles:
+    - Conspirator
+
+- type: entity
+  parent: [BaseConspiracyObjective, BaseFreeObjective]
+  id: ConspiracyObjective
+  name: Begin the Conspiracy
+  description: Working together with your fellow conspirators choose a goal and complete it to the best of your ability to show the station what are you capable of.
+  components:
+  - type: Objective
+    icon:
+      sprite: Objects/Misc/bureaucracy.rsi
+      state: folder-white
+

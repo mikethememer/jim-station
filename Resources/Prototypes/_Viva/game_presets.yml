@@ -3,3 +3,17 @@
   name: CCD
   rules:
     - TimeAgent
+- #Unsure if this works correctly
+- type: gamePreset
+  id: Conspiracy
+  name: conspiracy-title
+  description: conspiracy-title
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - Conspiracy
+  - SubGamemodesRule
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation

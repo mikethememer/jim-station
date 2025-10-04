@@ -5,3 +5,11 @@
   frequency: 3446
   color: "#ffbd00"
   longRange: true
+
+- type: radioChannel
+  id: ConspiracyRadio
+  name: Conspiracy
+  keycode: "W"
+  frequency: 7643
+  color: "#9c0eb5"
+  longrange: true

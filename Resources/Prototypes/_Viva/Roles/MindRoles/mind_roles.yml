@@ -8,3 +8,14 @@
     exclusiveAntag: true
     roleType: SoloAntagonist
   - type: TimeAgentRole
+
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleConspiracy
+  name: Conspirator Role
+  components:
+  - type: Mindrole
+    antag prototype: Conspirator
+    exclusiveAntag: true
+    roleType: TeamAntagonist
+  - type: ConspiratorRole

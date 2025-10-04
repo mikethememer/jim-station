@@ -296,6 +296,21 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(timeAgentAntag);
 
+        // Viva - Conspiracy
+        Verb ConspiracyAntag = new()
+        {
+            Text = "Conspirator",
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Viva/Interface/Misc/antag_icons.rsi/ConspiracyIcon.rsi"), "icon"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<TimeAgentRuleComponent>(targetPlayer, "Conspirator");
+            },
+            Impact = LogImpact.High,
+            Message = Loc.GetString("admin-verb-make-conspiracy")
+        };
+        args.Verbs.Add(ConspiracyAntag);
+
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
         {

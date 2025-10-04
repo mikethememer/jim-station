@@ -301,7 +301,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = "Conspirator",
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Viva/Interface/Misc/antag_icons.rsi/ConspiracyIcon.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Viva/Icons/antag_icons.rsi"), "ConspiracyIcon"),
             Act = () =>
             {
                 _antag.ForceMakeAntag<TimeAgentRuleComponent>(targetPlayer, "Conspirator");

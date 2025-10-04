@@ -9,7 +9,7 @@
 - type: radioChannel
   id: ConspiracyRadio
   name: Conspiracy
-  keycode: "W"
+  keycode: "w"
   frequency: 7643
   color: "#9c0eb5"
   longrange: true

@@ -14,8 +14,7 @@
   id: MindRoleConspiracy
   name: Conspirator Role
   components:
-  - type: Mindrole
+  - type: MindRole
     antag prototype: Conspirator
     exclusiveAntag: true
     roleType: TeamAntagonist
-  - type: ConspiratorRole

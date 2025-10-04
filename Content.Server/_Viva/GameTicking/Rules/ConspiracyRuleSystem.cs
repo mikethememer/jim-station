@@ -1,9 +1,10 @@
-- using Content.Server._Viva.GameTicking.Rules.Components;
-  using Content.Server.Antag;
-  using Content.Server.GameTicking.Rules;
-  using Content.Server.Mind;
-  using Content.Shared.Roles;
-  using Robust.Shared.Prototypes;
+
+using Content.Server._Viva.GameTicking.Rules.Components;
+using Content.Server.Antag;
+using Content.Server.GameTicking.Rules;
+using Content.Server.Mind;
+using Content.Shared.Roles;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._Viva.GameTicking.Rules;
 

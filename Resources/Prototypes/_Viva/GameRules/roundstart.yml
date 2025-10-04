@@ -36,10 +36,9 @@
   - type: AntagSelection
 
 - type: entity
-  parent: BaseGameRule
+  parent: BaseConspiracyRule
   id: Conspiracy
   components:
-  - type: ConspiracyRule
   - type: GameRule 
     minPlayers: 10
   - type: AntagObjectives

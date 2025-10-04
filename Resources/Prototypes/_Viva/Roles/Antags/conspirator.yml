@@ -3,7 +3,7 @@
   name: Conspirator
   antagonist: true
   setPreference: true
-  objective: ConspiracyObjective
+  objective: roles-antag-conspiracy-objective 
 
 - type: entity
   abstract: true

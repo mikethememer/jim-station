@@ -1,6 +1,6 @@
 namespace Content.Server._Viva.GameTicking.Rules.Components;
 
-[RegisterComponent, Access(typeof(TimeAgentRuleSystem))]
+[RegisterComponent, Access(typeof(ConspiracyRuleSystem))]
 public sealed partial class ConspiracyRuleComponent : Component
 {
 }

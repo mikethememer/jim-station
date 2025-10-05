@@ -301,10 +301,10 @@ public sealed partial class AdminVerbSystem
         {
             Text = "Conspirator",
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Viva/Icons/antag_icons.rsi"), "ConspiracyIcon"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_EinsteinEngines/Mobs/Species/IPC/organs.rsi"), "eyes"),
             Act = () =>
             {
-                _antag.ForceMakeAntag<TimeAgentRuleComponent>(targetPlayer, "Conspirator");
+                _antag.ForceMakeAntag<ConspiracyRuleComponent>(targetPlayer, "Conspirator");
             },
             Impact = LogImpact.High,
             Message = Loc.GetString("admin-verb-make-conspiracy")

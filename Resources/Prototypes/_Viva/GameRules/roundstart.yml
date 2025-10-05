@@ -28,24 +28,19 @@
         sound: "/Audio/_Viva/Misc/ccd-intro.ogg"
 
 - type: entity
-  abstract: true
   parent: BaseGameRule
-  id: BaseConspiracyRule
-  components:
-  - type: ConspiracyRule
-  - type: AntagSelection
-
-- type: entity
-  parent: BaseConspiracyRule
   id: Conspiracy
   components:
-  - type: GameRule 
+  - type: ConspiracyRule
+  - type: GameRule
     minPlayers: 10
+    delay:
+      min: 60
+      max: 120
   - type: AntagObjectives
     objectives:
     - ConspiracyObjective
   - type: AntagSelection
-    selectionTime: PrePlayerSpawn
     definitions:
     - prefRoles: [ Conspirator ]
       min: 2
@@ -54,11 +49,5 @@
       blacklist:
         components:
         - AntagImmune
-      components:
-  - type: IntrinsicRadioReceiver
-  - type: IntrinsicRadioTransmitter
-    channels:
-    - ConspiracyRadio
-- 
       mindRoles:
       - MindRoleConspiracy

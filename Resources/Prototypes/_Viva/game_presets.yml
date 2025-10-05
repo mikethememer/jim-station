@@ -4,9 +4,9 @@
   rules:
     - TimeAgent
 
-- #Unsure if this works correctly
+
 - type: gamePreset
-  id: Conspiracy
+  id: ConspiracyPreset
   name: conspiracy-title
   description: conspiracy-description
   showInVote: false
